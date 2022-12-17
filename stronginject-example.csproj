@@ -6,10 +6,16 @@
     <RootNamespace>stronginject_example</RootNamespace>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
+
+    <EmitCompilerGeneratedFiles>true</EmitCompilerGeneratedFiles>
+    <CompilerGeneratedFilesOutputPath>RoslynGenerated</CompilerGeneratedFilesOutputPath>
   </PropertyGroup>
 
   <ItemGroup>
     <PackageReference Include="StrongInject" Version="1.4.4" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Compile Remove="RoslynGenerated\**" />
+  </ItemGroup>
 </Project>
