@@ -4,10 +4,10 @@ public class Bar
 {
     private readonly int _someNumber;
     
-    public Bar(DataSource dataSource)
+    public Bar(Foo foo)
     {
         Console.WriteLine("Hello from the Bar constructor");
-        Console.WriteLine("Epic is " + dataSource.GetEpic());
+        Console.WriteLine("The guid is " + foo.GetGuid());
         _someNumber = 536;
     }
 
