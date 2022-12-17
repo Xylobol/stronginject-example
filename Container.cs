@@ -3,6 +3,7 @@
 namespace stronginject_example;
 
 [Register(typeof(DataSource))]
-public partial class Container : IContainer<DataSource>
+[Register(typeof(Foo))]
+public partial class Container : IContainer<DataSource>, IContainer<Foo>
 {
 }
